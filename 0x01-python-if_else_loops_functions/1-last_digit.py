@@ -7,7 +7,7 @@ if number > 0:
 elif number < 0:
     l_d = (10 - number % 10) * -1
 elif (number == 0):
-    l_d = 0
+    l_d = number % 10
     # if (number == 0):
   #  l_d = 0
 if (number < 0):

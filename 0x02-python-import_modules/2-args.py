@@ -1,15 +1,20 @@
 #!/usr/bin/python3
-
 if __name__ == "__main__":
     from sys import argv
-    len_Arg = len(argv)
-    cout = abs(len_Arg - 1)
 
-    if (cout == 0):
+    ecount = len(argv)
+    argc = ecount - 1
+
+    if (ecount == 1):
         print("0 argument.")
-    elif (cout == 1):
-        print("{:d} argument.".format(cout))
+    elif (ecount == 2):
+        print("{:d} argument.".format(argc))
     else:
-        print("{:d} arguments:".format(cout))
-    for n in range(1, len_Arg):
-        print("{:d}: {:s}".format(n, argv[n]))
+        print("{:d} arguments:".format(argc))
+    for n, x in enumerate(argv):
+        if (n == 0):
+            continue
+        print("{:d}: {:s}".format(n, x))
+
+
+

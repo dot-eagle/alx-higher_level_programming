@@ -2,7 +2,7 @@
 
 if __name__ == "__main__":
     from sys import argv
-    lenOfArg = len(argv)
+    # ilenOfArg = len(argv)
     cout = len(argv) - 1
 
     if (cout == 1):

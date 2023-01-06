@@ -5,11 +5,11 @@ if __name__ == "__main__":
     len_Arg = len(argv)
     cout = abs(len_Arg - 1)
 
-    if (cout == 0):
+    if (len_Arg == 0):
         print("0 argument.")
-    elif (cout == 1):
+    elif (len_Arg == 1):
         print("{:d} argument.".format(cout))
     else:
         print("{:d} arguments:".format(cout))
-    for n in range(1, cout):
+    for n in range(1, len_Arg):
         print("{:d}: {:s}".format(n, argv[n]))

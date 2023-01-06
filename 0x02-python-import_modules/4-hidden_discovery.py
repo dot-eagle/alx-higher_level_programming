@@ -6,4 +6,4 @@ if __name__ == "__main__":
     listofnames = dir(hidden_4)
     for name in listofnames:
         if name[:2] != "__":
-            print("{}".format(name))
+            print("{:c}".format(name))

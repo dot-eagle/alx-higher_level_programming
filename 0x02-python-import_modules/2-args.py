@@ -11,5 +11,5 @@ if __name__ == "__main__":
         print("{:d} argument.".format(cout))
     else:
         print("{:d} arguments:".format(cout))
-    for n in range(1, len_Arg):
+    for n in range(1, cout):
         print("{:d}: {:s}".format(n, argv[n]))

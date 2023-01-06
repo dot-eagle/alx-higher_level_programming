@@ -8,8 +8,8 @@ if __name__ == "__main__":
     if (len_Arg == 0):
         print("0 argument.")
     elif (len_Arg == 1):
-        print("{:d} argument.".format(cout))
+        print("{:d} argument.".format(len_Arg))
     else:
-        print("{:d} arguments:".format(cout))
+        print("{:d} arguments:".format(len_Arg))
     for n in range(1, len_Arg):
         print("{:d}: {:s}".format(n, argv[n]))

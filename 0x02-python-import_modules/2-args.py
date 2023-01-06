@@ -2,15 +2,15 @@
 if __name__ == "__main__":
     import sys
     argv = sys.argv[1:]
-    argv_count = len(argv)
-    index = 1
-    if argv_count == 0:
-        print("{:d} arguments.".format(argv_count))
-    elif argv_count == 1:
-        print("{:d} argument:".format(argv_count))
-        print("{:d}: {:s}".format(index, sys.argv[1]))
+    num = len(argv)
+    n = 1
+    if num == 0:
+        print("{:d} argument.".format(num))
+    elif num == 1:
+        print("{:d} argument:".format(num))
+        print("{:d}: {:s}".format(n, sys.argv[1]))
     else:
-        print("{:d} arguments:".format(argv_count))
-        while index <= argv_count:
-            print("{:d}: {:s}".format(index, sys.argv[index]))
-            index += 1
+        print("{:d} arguments:".format(num))
+        while n <= num:
+            print("{:d}: {:s}".format(n, sys.argv[n]))
+            n += 1

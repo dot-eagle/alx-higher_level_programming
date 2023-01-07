@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    from calculator_1 import mul, sub, add, div
+    from calculator_1 import div, add, mul, sub, add, div
 
     argv = sys.argv[1:]
     ag_count = len(argv)

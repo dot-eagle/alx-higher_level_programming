@@ -1,6 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 def no_c(my_string):
+
     indx = 0
     list_my_string = list(my_string)
 
@@ -8,4 +9,5 @@ def no_c(my_string):
         if (element == 'c' or element == 'C'):
             list_my_string[indx] = ""
         indx += 1
+    
     return "".join(list_my_string)

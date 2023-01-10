@@ -1,0 +1,26 @@
+#include "lists.h"
+
+/**
+ * is_palindrome - checks if linked list palindrome
+ * @head: head of node
+ *
+ * Return: 0 if not, 1 if is
+ */
+
+
+int is_palindrome(listint_t **head)
+{
+	unsigned int h = 1;
+	listint_t *temp;
+
+	if (head == NULL|| *head == NULL)
+		return (1);
+
+	temp = *head;
+	while (temp) /* get the lenght of the list */
+	{
+		temp = temp->next;
+		h++;
+	}
+	return (0);
+}

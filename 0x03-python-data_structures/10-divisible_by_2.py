@@ -4,7 +4,7 @@ def divisible_by_2(my_list=[]):
 
     new_list = list(my_list)
 
-    if not my_list:
+    if (not my_list):
         return (my_list)
 
     for check in my_list:
@@ -13,8 +13,5 @@ def divisible_by_2(my_list=[]):
         else:
             new_list[check] = False
     return (new_list)
-
-
-
 
 

@@ -11,3 +11,9 @@ print("--")
 print_sorted_dictionary(new_dict)
 
 
+
+"""
+def multiply_by_2(my_dict):
+        return dict(zip(my_dict.keys(), (i * 2 for i in my_dict.values())))
+
+"""

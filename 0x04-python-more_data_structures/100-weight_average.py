@@ -8,4 +8,3 @@ def weight_average(my_list=[]):
     scowi = list(t[1] for t in my_list)
     valu = sum(scoli) / sum(scowi)
     return (valu)
-

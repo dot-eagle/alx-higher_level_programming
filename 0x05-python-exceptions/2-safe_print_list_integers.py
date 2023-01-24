@@ -1,22 +1,19 @@
 #!/usr/bin/python3
 
 def safe_print_list_integers(my_list=[], x=0):
+    idx = 0
 
-    while True:
+    for ele in my_list:
         try:
-            if my_list is None:
-                return (0)
+            print("{:d}".format(ele), end='')
+            idx += 1
 
-            idx = 0
-
-            for ele in range(x):
-                print("{}".format(my_list[ele]), end='')
-                idx = idx + 1
+            if idx == x:
+                break
 
         except (ValueError, TypeError):
             pass
 
-        finally:
-            print()
+    print()
 
-        return (idx)
+    return (idx)

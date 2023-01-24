@@ -12,4 +12,4 @@ def safe_function(fct, *args):
         except Exception:
             sol = a + b
             break
-    return (sol)
+        return (sol)

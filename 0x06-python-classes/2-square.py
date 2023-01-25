@@ -1,19 +1,25 @@
 #!/usr/bin/python3
 
 """
-Module 2-square
+Module 2-square: A class Square that defines a square
 Defines class Square with private attribute size and validates size
 """
 
 
 class Square:
-    def __init__(self, size=0): 
-    """ 
-    init allow square class to be used
     """
+    class Square definition
+    Args:
+        init allow square class to be used
+        size (int): size of a side in square
+    """
+    def __init__(self, size=0):
         self.__size = size
         """
-        asign private instance attribute size
+        Initializes square
+        Attributes:
+            asign private instance attribute size
+            __size (int): size of a side of square, defaults to 0 if none
         """
 
         if type(size) is not int:

@@ -33,7 +33,7 @@ class Square:
            int position (int): tuple of two positive integers
         """
         try:
-            self.__position = position
+            self.position = position
         except TypeError as err:
             print(err)
 

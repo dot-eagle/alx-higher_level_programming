@@ -33,7 +33,7 @@ class Square:
            int position (int): tuple of two positive integers
         """
         try:
-            self.position = position
+            self.__position = position
         except TypeError as err:
             print(err)
 
@@ -53,13 +53,10 @@ class Square:
         Args:
             value: sets position to tuple if value is tuple of 2 positive ints
         """
-        if type(value) is not tuple:
+        if type(value) is not tuple or len(value) != 2:
             self.__position = None
             raise TypeError(posta)
-        elif len(value) != 2:
-            self.__position = None
-            raise TypeError(posta)
-        elif type(value[0]) != int or type(value[1]) != int:
+        elif type(value[0]) is not int or type(value[1]) is not int:
             self.__position = None
             raise TypeError(posta)
         elif value[0] < 0 or value[1] < 0:
@@ -100,7 +97,7 @@ class Square:
         return (area)       # (self.__size ** 2)
 
     def my_print(self):
-        if self.__size >= 0:
+        if self.__size != 0:
             """
             Prints square with #'s
             """

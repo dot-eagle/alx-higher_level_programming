@@ -67,6 +67,6 @@ class Square:
             Prints square with #'s
             """
             for x in range(self.__size):
-                print("{}".format("#" * self.__size))
+                print("{}".format("#" * self.__size, end=" "))
             else:
                 print()

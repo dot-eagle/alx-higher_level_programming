@@ -62,11 +62,11 @@ class Square:
         return (area)       # (self.__size ** 2)
 
     def my_print(self):
+        """
         if self.__size > 0:
-            """
-            Prints square with #'s
-            """
-            for x in range(self.__size):
-                print("{}".format("#" * self.__size))
-            else:
-                print()
+        Prints square with #'s
+        """
+        for x in range(self.__size):
+            print("{}".format("#" * self.__size))
+        else:
+            print()

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Define a class Rectangle
+Module to define a class Rectangle
 """
 
 
@@ -10,14 +10,18 @@ class Rectangle:
     creating a Rectangle class
     """
     def __init__(self, width=0, height=0):
-        """ Instantiation Method for Rectangle """
+        """ Instantiation Method for Rectangle
+            Args:
+                width (int type): of the rectangle
+                height (int type): of the rectangle
+        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
         """ Private instance attribute
-        and Getter for width 
+             and Getter for width
         """
         return self.__width
 
@@ -46,4 +50,3 @@ class Rectangle:
             raise ValueError("height must be >= 0")
 
         self.__height = value
-

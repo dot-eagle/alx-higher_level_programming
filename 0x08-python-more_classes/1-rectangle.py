@@ -9,7 +9,7 @@ class Rectangle:
     """
     creating a Rectangle class
     """
-    def __init__(self, width=0, height=0):
+    def __init__(self, height=0, width=0):
         """ Instantiation Method for Rectangle
             Args:
                 width (int type): of the rectangle

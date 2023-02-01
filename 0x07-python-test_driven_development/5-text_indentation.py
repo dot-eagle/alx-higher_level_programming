@@ -9,13 +9,20 @@ prints a text with 2 new lines
 def text_indentation(text):
     """ checks if "text" is a str type or not """
 
-    flag = True
-    delimiters = ["?", ".", ":"]
+    delimiters = [".", "?", ":"]
+    flags = True
 
     if type(text) != str:
         raise TypeError("text must be a string")
 
     for char in text:
-        print("{}".format(char), end="")
-        if char in delimiters:
-            print("\n")
+        if char == " " and flag == True:
+            continue
+
+        elif char in delimiters:
+            print("{}\n".format(char, end=""))
+            """ print("\n") """
+            flag = True
+        else:
+            print(char, end="")
+            flag = False

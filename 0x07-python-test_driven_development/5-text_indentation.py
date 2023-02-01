@@ -10,7 +10,7 @@ def text_indentation(text):
     """ checks if "text" is a str type or not """
 
     flag = True
-    delimiters = ["?", ".", ":", ","]
+    delimiters = ["?", ".", ":"]
 
     if type(text) != str:
         raise TypeError("text must be a string")

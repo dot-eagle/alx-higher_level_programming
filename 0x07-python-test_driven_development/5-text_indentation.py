@@ -16,7 +16,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     for char in text:
-        if char == " " and flag == True:
+        if char == " " and if flag is True:
             continue
 
         elif char in delimiters:

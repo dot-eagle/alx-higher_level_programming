@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 """
-python funcion
-prints a text with 2 new lines 
+python funcion module:
+prints a text with 2 new lines
 """
 
 
@@ -19,4 +19,3 @@ def text_indentation(text):
         print("{}".format(char), end="")
         if char in delimiters:
             print("\n")
-

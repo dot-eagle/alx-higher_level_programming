@@ -18,9 +18,9 @@ def print_square(size):
 
     ''' elsereturn (None) '''
 
-    for side in range(size):
+    for side1 in range(size):
         print("{}".format("#" * size))
 
-        '''if side < size - 1:
-            print() '''
-
+        """ for side2 in range(size):
+            if side1 < (size - 1):
+                print() """

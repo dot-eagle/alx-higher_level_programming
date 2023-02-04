@@ -52,7 +52,7 @@ class Node:
 
         @next_node.setter
         def next_node(self, value):
-            if type(value) is not int:
+            if type(value) is not Node:
                 raise TypeError("next_node must be an integer")
             else:
                 self.__next_node = value
@@ -89,7 +89,7 @@ class SinglyLinkedList:
             new = Node(value)
         except Exception:
             return
-        if self.__head is None:
+        if not self.__head:
             self.__head = new
         else:
             tr = self.__head

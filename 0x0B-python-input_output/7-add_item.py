@@ -20,4 +20,4 @@ except IOError:
 arg_count = len(sys.argv)
 for x in range(1, arg_count):
     jsonload.append(sys.argv[x])
-save_to_json_file(jsonload + (sys.argv[1:]), "add_item.json")
+save_to_json_file(jsonload, "add_item.json")

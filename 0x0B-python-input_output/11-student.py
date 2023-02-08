@@ -2,7 +2,7 @@
 
 """
 class Student that defines a student
-(based on 9-student.py)
+(based on 10-student.py)
 """
 
 
@@ -35,3 +35,9 @@ class Student:
         representation of class """
 
         return (jdic)
+
+    def reload_from_json(self, json):
+        """ Public method that replaces all attributes
+        of the class Student instance """
+        for val in json.keys():
+            self.__dict__[val] = json[val]

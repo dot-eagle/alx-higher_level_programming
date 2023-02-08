@@ -15,11 +15,10 @@ def pascal_triangle(n):
 
     sol1 = []
     if n > 0:
-        for a in range (n):
+        for a in range(n):
             sol2 = [1 for _ in range(a + 1)]
-            for c in range (a):
+            for c in range(a):
                 if c != 0 and c != a:
-                    sol2[c] = sol1[a - 1][c] +  sol1[a - 1][c - 1]
+                    sol2[c] = sol1[a - 1][c] + sol1[a - 1][c - 1]
             sol1.append(sol2)
     return (sol1)
-

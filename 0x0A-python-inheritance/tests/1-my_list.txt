@@ -8,7 +8,7 @@ Class MyList can store a list
 Has a function print_sorted to print the list in MyList sorted
 
 First Import module:
-    >>> MyList = __import__('1-my_list').MyList
+	>>> MyList = __import__('1-my_list').MyList
 
 Now use it:
 
@@ -26,7 +26,7 @@ Basic print_sorted usage:
 	>>> my_list.print_sorted()
     	[1, 2, 3, 4, 5]
         >>> print(my_list)
-	    [1, 4, 2, 3, 5]
+	[1, 4, 2, 3, 5]
 
 Big int MyList usage:
 	>>> my_list = MyList()

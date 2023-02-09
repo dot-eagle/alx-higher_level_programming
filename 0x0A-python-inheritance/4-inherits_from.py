@@ -18,6 +18,6 @@ def inherits_from(obj, a_class):
         return (False)
 
     if type(obj) is a_class:
-        return (True)
-    else:
         return (False)
+    else:
+        return (True)

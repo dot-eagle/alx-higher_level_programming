@@ -6,8 +6,8 @@ Python module of class BaseGeometry (based on 5-base_geometry.py).
 
 
 class BaseGeometry:
-    """ Function of a class BaseGeometry 
-     (based on 5-base_geometry.py) """
+    """ Function of a class BaseGeometry
+    (based on 5-base_geometry.py) """
 
     def area(self):
         """ area: Public instance method """
